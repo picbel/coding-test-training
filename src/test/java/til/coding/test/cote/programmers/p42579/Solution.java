@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class Solution {
-
+//    https://programmers.co.kr/learn/courses/30/lessons/42579
     public int[] solution(String[] genres, int[] plays) {
         List<Integer> answer = new ArrayList<>();
         HashMap<String, genreBundle> musicMap = new HashMap<>();
@@ -64,15 +64,6 @@ class Solution {
             return 0;
         }
 
-        @Override
-        public String toString() {
-            return "genreBundle{" +
-                    "genre='" + genre + '\'' +
-                    ", totalPlay=" + totalPlay +
-//                    ", musicList=" + musicList +
-                    '}';
-        }
-
         public void addAnswer(List<Integer> answer) {
             if (musicList.size() == 1){
                 answer.add(musicList.get(0).id);
@@ -92,15 +83,6 @@ class Solution {
             this.genre = genre;
             this.play = play;
             this.id = id;
-        }
-
-        @Override
-        public String toString() {
-            return "Music{" +
-                    "genre='" + genre + '\'' +
-                    ", play=" + play +
-                    ", id=" + id +
-                    '}';
         }
 
         @Override
