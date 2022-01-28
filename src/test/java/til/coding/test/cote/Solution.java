@@ -12,18 +12,17 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class Solution {
 
-//    public int solution(String[][] clothes) {
+//    public int[] solution() {
 //
 //        return answer;
 //    }
-
+//
 //    @MethodSource
 //    @ParameterizedTest
-    void verify(){
-//        assertThat().isEqualTo();
-    }
-
-
+//    void verify(){
+//        assertThat(solution( )).isEqualTo();
+//    }
+//
 //    static Stream<Arguments> verify(){
 //        return Stream.of(
 //
