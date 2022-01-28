@@ -75,27 +75,6 @@ class Solution2 {
         boolean isComplete(){
             return progress > 100;
         }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Task task = (Task) o;
-            return index == task.index;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(index);
-        }
-
-        @Override
-        public String toString() {
-            return "Task{" +
-                    "index=" + index +
-                    ", day=" + day +
-                    '}';
-        }
     }
 
     static Stream<Arguments> solution(){

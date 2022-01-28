@@ -8,22 +8,26 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 class Solution {
 
-
+//    public int solution(String[][] clothes) {
+//
+//        return answer;
+//    }
 
 //    @MethodSource
 //    @ParameterizedTest
-    void solution() {
-
-//        return answer;
+    void verify(){
+//        assertThat().isEqualTo();
     }
 
-//    static Stream<Arguments> solution(){
+
+//    static Stream<Arguments> verify(){
 //        return Stream.of(
 //
 //        );
 //    }
-
 
 }
