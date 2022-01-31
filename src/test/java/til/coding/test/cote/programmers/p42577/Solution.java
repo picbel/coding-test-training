@@ -26,9 +26,8 @@ class Solution {
                 break;
             }
         }
-
+//tesst
         assertThat(answer).isEqualTo(result);
-
     }
 
     static Stream<Arguments> solution(){
