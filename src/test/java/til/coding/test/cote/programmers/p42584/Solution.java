@@ -13,19 +13,14 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class Solution {
 
     public int[] solution(int[] prices) {
-        List<Integer> answer = new ArrayList<>();
+        int[] answer = new int[prices.length];
         for (int i = 0; i < prices.length; i++) {
-            int nowPrice = prices[i];
-            int count = 0;
             for (int j = i+1; j < prices.length; j++) {
-                System.out.println("now = "+nowPrice+ " / price "+ prices[j]);
-                if (!(nowPrice > prices[j])){
-                    count++;
-                }
+                answer[i] = j-i;
+                if(prices[i]>prices[j]) break;
             }
-            answer.add(count);
         }
-        return answer.stream().mapToInt(i -> i).toArray();
+        return answer;
     }
 
     @MethodSource
