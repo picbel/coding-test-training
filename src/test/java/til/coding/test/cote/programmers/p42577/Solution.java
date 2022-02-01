@@ -26,7 +26,7 @@ class Solution {
                 break;
             }
         }
-//tesst
+
         assertThat(answer).isEqualTo(result);
     }
 
