@@ -15,15 +15,15 @@ class Solution {
         int answer = 0;
         HashMap<String,String> numStr = new HashMap<>();
         numStr.put("zero","0");
-        numStr.put("one","1")  ;
-        numStr.put("two","2")  ;
-        numStr.put("three","3")   ;
-        numStr.put("four","4")   ;
-        numStr.put("five","5")   ;
-        numStr.put("six","6")   ;
-        numStr.put("seven","7")   ;
-        numStr.put("eight","8")   ;
-        numStr.put("nine","9")   ;
+        numStr.put("one","1");
+        numStr.put("two","2");
+        numStr.put("three","3");
+        numStr.put("four","4");
+        numStr.put("five","5");
+        numStr.put("six","6");
+        numStr.put("seven","7");
+        numStr.put("eight","8");
+        numStr.put("nine","9");
         for (Map.Entry<String, String> map : numStr.entrySet()) {
             s = s.replace(map.getKey(),map.getValue());
         }
