@@ -23,7 +23,6 @@ class Solution {
             int y2 = query[3];
 
             List<Integer> list = new ArrayList<>();
-            //[1, 2, 2, 3]
             for (int i = y1; i < y2; i++) {
                 list.add(getLocationValue(x1,i,procession));
             }
@@ -47,7 +46,6 @@ class Solution {
             }
             for (int i = x1; i < x2; i++) {
                 setLocationValue(i,y2,procession,q.poll());
-
             }
             for (int i = y2; i > y1; i--) {
                 setLocationValue(x2,i,procession,q.poll());
@@ -62,7 +60,6 @@ class Solution {
     }
 
     int getLocationValue(int x,int y, int[][] procession){
-//        System.out.println("x, y = "+x+" "+y);
         return procession[x-1][y-1];
     }
     void setLocationValue(int x,int y ,int[][] procession, int value){
